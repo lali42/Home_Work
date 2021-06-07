@@ -1,0 +1,16 @@
+D:\works\ฝึกงาน\Home Work\bin\Debug\net5.0\Home Work.exe
+D:\works\ฝึกงาน\Home Work\bin\Debug\net5.0\Home Work.deps.json
+D:\works\ฝึกงาน\Home Work\bin\Debug\net5.0\Home Work.runtimeconfig.json
+D:\works\ฝึกงาน\Home Work\bin\Debug\net5.0\Home Work.runtimeconfig.dev.json
+D:\works\ฝึกงาน\Home Work\bin\Debug\net5.0\Home Work.dll
+D:\works\ฝึกงาน\Home Work\bin\Debug\net5.0\ref\Home Work.dll
+D:\works\ฝึกงาน\Home Work\bin\Debug\net5.0\Home Work.pdb
+D:\works\ฝึกงาน\Home Work\obj\Debug\net5.0\Home Work.csproj.AssemblyReference.cache
+D:\works\ฝึกงาน\Home Work\obj\Debug\net5.0\Home Work.GeneratedMSBuildEditorConfig.editorconfig
+D:\works\ฝึกงาน\Home Work\obj\Debug\net5.0\Home Work.AssemblyInfoInputs.cache
+D:\works\ฝึกงาน\Home Work\obj\Debug\net5.0\Home Work.AssemblyInfo.cs
+D:\works\ฝึกงาน\Home Work\obj\Debug\net5.0\Home Work.csproj.CoreCompileInputs.cache
+D:\works\ฝึกงาน\Home Work\obj\Debug\net5.0\Home Work.dll
+D:\works\ฝึกงาน\Home Work\obj\Debug\net5.0\ref\Home Work.dll
+D:\works\ฝึกงาน\Home Work\obj\Debug\net5.0\Home Work.pdb
+D:\works\ฝึกงาน\Home Work\obj\Debug\net5.0\Home Work.genruntimeconfig.cache
