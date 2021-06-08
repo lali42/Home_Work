@@ -1,4 +1,5 @@
 using System;
+using System.Linq;
 
 namespace Home_Work
 {
@@ -6,9 +7,9 @@ namespace Home_Work
     {
         // static void Main(string[] args)
         // {
-        //     string text;
-        //     Console.WriteLine();
-        //     text = Console.ReadLine();
+        //     // string text;
+        //     // Console.WriteLine();
+        //     string text = Console.ReadLine();
         //     var result = string.Join(" ", text.Split(' ').Distinct());
         //     string[] textArray = result.Split(" ");
         //     Array.Sort(textArray);
