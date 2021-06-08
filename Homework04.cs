@@ -7,10 +7,10 @@ namespace Home_Work
         // static void Main(string[] args)
         // {
         //     string num;
-        //     string delimiterChars = ",";
+            // string delimiterChars = ",";
         //     Console.Write("Enter Your Number : ");
         //     num = Console.ReadLine();
-        //     String[] numArray = num.Split(delimiterChars);
+        //     String[] numArray = num.Split(",");
 
         //     foreach (var item in numArray)
         //     {

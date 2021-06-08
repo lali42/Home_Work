@@ -1,24 +1,30 @@
 {
   "format": 1,
   "restore": {
-    "D:\\works\\ฝึกงาน\\Home Work\\Home Work.csproj": {}
+    "C:\\Users\\Patricia\\Desktop\\ฝึกงาน\\Home_Work\\Home Work.csproj": {}
   },
   "projects": {
-    "D:\\works\\ฝึกงาน\\Home Work\\Home Work.csproj": {
+    "C:\\Users\\Patricia\\Desktop\\ฝึกงาน\\Home_Work\\Home Work.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\works\\ฝึกงาน\\Home Work\\Home Work.csproj",
+        "projectUniqueName": "C:\\Users\\Patricia\\Desktop\\ฝึกงาน\\Home_Work\\Home Work.csproj",
         "projectName": "Home Work",
-        "projectPath": "D:\\works\\ฝึกงาน\\Home Work\\Home Work.csproj",
-        "packagesPath": "C:\\Users\\USER\\.nuget\\packages\\",
-        "outputPath": "D:\\works\\ฝึกงาน\\Home Work\\obj\\",
+        "projectPath": "C:\\Users\\Patricia\\Desktop\\ฝึกงาน\\Home_Work\\Home Work.csproj",
+        "packagesPath": "C:\\Users\\Patricia\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Patricia\\Desktop\\ฝึกงาน\\Home_Work\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
         "configFilePaths": [
-          "C:\\Users\\USER\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\Patricia\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net5.0"
         ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
         "frameworks": {
           "net5.0": {
             "targetAlias": "net5.0",
