@@ -44,8 +44,6 @@ namespace Home_Work
         //         {
         //             Console.WriteLine("First not duplicate charactor is: " + charArray[i]);
         //         }
-
-
         //     }
         // }
     }

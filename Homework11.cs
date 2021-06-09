@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 
 namespace Home_Work
 {
@@ -30,9 +30,9 @@ namespace Home_Work
                 var x = i - 1;
                 var n = Convert.ToInt32(tosrt.Substring(ln - i, 1));
                 var digit = x % 6;
-                Console.WriteLine("digit " + digit);
-                Console.WriteLine("n " + n);
-                Console.WriteLine("x " + x);
+                // Console.WriteLine("digit " + digit);
+                // Console.WriteLine("n " + n);
+                // Console.WriteLine("x " + x);
 
                 if (n != 0)
                 {
@@ -49,7 +49,6 @@ namespace Home_Work
                         else
                         {
                             t += (digit == 1) ? "" : th_num[1][digit == 0 ? 1 : 0];
-
                         }
                     }
                     else if (n == 2)

@@ -29,9 +29,8 @@ namespace Home_Work
         //     // bool a = false;
         //     while (true)
         //     {
-        //         string input;
         //         Console.Write("Please choose LED to turn On/Off: ");
-        //         input = Console.ReadLine();
+        //         string input = Console.ReadLine();
         //         int n = 0;
         //         foreach (var number in lamps)
         //         {
