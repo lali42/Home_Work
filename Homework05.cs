@@ -33,6 +33,9 @@ class Homework05 : IHomework05
         {
             string input = ledNo;
             int n = 0;
+            // Console.Write("Please choose LED to turn On/Off: ");
+            // string input = Console.ReadLine();
+
             foreach (var number in lamps)
             {
 

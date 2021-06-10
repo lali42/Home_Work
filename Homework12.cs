@@ -1,17 +1,16 @@
 using System;
-using System.Linq;
 
 public interface IHomework12
 {
-    // char FirstDuplicateCharactor(string text);
+    char FirstDuplicateCharactor(string text);
     char FirstNotDuplicateCharactor(string text);
 }
 
 class HomeWork12 : IHomework12
 {
+    // Duplicate
     public char FirstDuplicateCharactor(string text)
     {
-
         string str = text;
         string output = null;
         char output1 = '-';
@@ -21,7 +20,7 @@ class HomeWork12 : IHomework12
 
         for (int i = 0; i < text.Length; i++)
         {
-            if (fiArray[text[i]] == -1)
+            if (fiArray[text[i]] != -1)
             {
                 fiArray[text[i]] = i;
             }
@@ -35,27 +34,22 @@ class HomeWork12 : IHomework12
 
         for (int i = 0; i < 256; i++)
         {
-            // if (fiArray[i] >= 0)
-            //     res = Math.Min(res, fiArray[i]);
-            // Console.WriteLine("res : " + res);
             if (fiArray[i] >= 0)
                 res = Math.Min(res, fiArray[i]);
-            Console.WriteLine("res : " + res);
-
         }
 
         if (res != Int32.MaxValue)
         {
             output = string.Join(" ", str[res]);
             output1 = Convert.ToChar(output);
-            // Console.WriteLine(output1);
         }
         return output1;
 
     }
+
+    // Not Duplicate
     public char FirstNotDuplicateCharactor(string text)
     {
-
         string str = text;
         string output = null;
         char output1 = '-';
@@ -76,7 +70,6 @@ class HomeWork12 : IHomework12
         }
 
         int res = Int32.MaxValue;
-        // Console.WriteLine("res : "+res);
 
         for (int i = 0; i < 256; i++)
         {
@@ -88,7 +81,6 @@ class HomeWork12 : IHomework12
         {
             output = string.Join(" ", str[res]);
             output1 = Convert.ToChar(output);
-            // Console.WriteLine(output1);
         }
         return output1;
 
