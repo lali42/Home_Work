@@ -1,50 +1,98 @@
 using System;
 using System.Linq;
 
-namespace Home_Work
+public interface IHomework12
 {
+    // char FirstDuplicateCharactor(string text);
+    char FirstNotDuplicateCharactor(string text);
+}
 
-    class HomeWork12
+class HomeWork12 : IHomework12
+{
+    public char FirstDuplicateCharactor(string text)
     {
-        // static void Main(string[] args)
-        // {
-        //     Console.Write("Please input string: ");
-        //     string text = Console.ReadLine();
-        //     int count;
-        //     char[] charArray = text.ToCharArray();
 
-        //     for (int i = 0; i < charArray.Length; i++)
-        //     {
-        //         count = 1;
-        //         for (int j = i + 1; j < charArray.Length; j++)
-        //         {
-        //             if (charArray[i] == charArray[j] && charArray[i] != ' ')
-        //             {
-        //                 count++;
-        //                 //Set string1[j] to 0 to avoid printing visited character  
-        //                 charArray[j] = '0';
-        //             }
-        //         }
-        //         //A character is considered as duplicate if count is greater than 1  
-        //         // if (count > 1 && charArray[i] != '0')
-        //         // {
-        //         //     Console.WriteLine(charArray[i]);
-        //         // }
-        //         // else if (count == 1 && charArray[i] != '0')
-        //         // {
-        //         //     Console.WriteLine(charArray[i]);
-        //         // }
+        string str = text;
+        string output = null;
+        char output1 = '-';
+        int[] fiArray = new int[256];
+        for (int i = 0; i < 256; i++)
+            fiArray[i] = -1;
 
-        //         if (count > 1 && charArray[i] != '0')
-        //         {
-        //             Console.WriteLine("First duplicate charactor is: " + charArray[i]);
-        //             // break;
-        //         }
-        //         if (count == 1 && charArray[i] != '0')
-        //         {
-        //             Console.WriteLine("First not duplicate charactor is: " + charArray[i]);
-        //         }
-        //     }
-        // }
+        for (int i = 0; i < text.Length; i++)
+        {
+            if (fiArray[text[i]] == -1)
+            {
+                fiArray[text[i]] = i;
+            }
+            else
+            {
+                fiArray[text[i]] = -2;
+            }
+        }
+
+        int res = Int32.MaxValue;
+
+        for (int i = 0; i < 256; i++)
+        {
+            // if (fiArray[i] >= 0)
+            //     res = Math.Min(res, fiArray[i]);
+            // Console.WriteLine("res : " + res);
+            if (fiArray[i] >= 0)
+                res = Math.Min(res, fiArray[i]);
+            Console.WriteLine("res : " + res);
+
+        }
+
+        if (res != Int32.MaxValue)
+        {
+            output = string.Join(" ", str[res]);
+            output1 = Convert.ToChar(output);
+            // Console.WriteLine(output1);
+        }
+        return output1;
+
     }
+    public char FirstNotDuplicateCharactor(string text)
+    {
+
+        string str = text;
+        string output = null;
+        char output1 = '-';
+        int[] fiArray = new int[256];
+        for (int i = 0; i < 256; i++)
+            fiArray[i] = -1;
+
+        for (int i = 0; i < text.Length; i++)
+        {
+            if (fiArray[text[i]] == -1)
+            {
+                fiArray[text[i]] = i;
+            }
+            else
+            {
+                fiArray[text[i]] = -2;
+            }
+        }
+
+        int res = Int32.MaxValue;
+        // Console.WriteLine("res : "+res);
+
+        for (int i = 0; i < 256; i++)
+        {
+            if (fiArray[i] >= 0)
+                res = Math.Min(res, fiArray[i]);
+        }
+
+        if (res != Int32.MaxValue)
+        {
+            output = string.Join(" ", str[res]);
+            output1 = Convert.ToChar(output);
+            // Console.WriteLine(output1);
+        }
+        return output1;
+
+    }
+
+
 }

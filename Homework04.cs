@@ -1,5 +1,6 @@
 using System;
-using Home_Work;
+using System.Linq;
+
 
 public interface IHomework04
 {
@@ -11,7 +12,7 @@ class Homework04 : IHomework04
     public string GetDivisibleBy5Text(string text)
     {
         string num = text;
-        String[] numArray = num.Split(",");
+        string[] numArray = num.Split(",");
         string output = "";
 
         foreach (var item in numArray)
@@ -29,6 +30,7 @@ class Homework04 : IHomework04
                 output = string.Join(",", item);
             }
         }
+
         return output;
     }
 }
