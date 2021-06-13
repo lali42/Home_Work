@@ -36,12 +36,19 @@ namespace Home_work
             // Console.WriteLine("First not duplicate charactor is: "+notDup);
 
             // Homework13
-            // var number = new HomeWork13();
+            var number = new HomeWork13();
+            enum data : int
+            {
+                "000000", "000099", "009900", "990000",
+                "000999", "009990", "099900", "999000",
+                "990999", "919909", "999799", "999999",
+            }
             // // IEnumerable<int> numbers = Enumerable.Range(000000,999999);
             // Console.Write("input : ");
             // IEnumerable<int> number = Console.ReadLine();
             // int data = number.Homework13(numbers);
             // Console.WriteLine(data);
+
         }
     }
 }
