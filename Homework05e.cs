@@ -1,15 +1,11 @@
 using System;
 
-public interface IHomework05
+namespace HomeWork05e
 {
-    string DisplayLEDOnScreen(string ledNo);
-}
-
-class Homework05 : IHomework05
-{
-    public string DisplayLEDOnScreen(string ledNo)
+    class new05
     {
-        string[] status = { " ", " ", " ", " ", " ", " ", " ", " ", " ", " " };
+        public static void Main(string[]  args){
+            string[] status = { " ", " ", " ", " ", " ", " ", " ", " ", " ", " " };
         string[] lamps = { "1", "2", "3", "4", "5", "6", "7", "8", "9", "A" };
         foreach (var index in status)
         {
@@ -26,10 +22,10 @@ class Homework05 : IHomework05
 
         while (true)
         {
-            string input = ledNo;
+            // string input = ledNo;
             int n = 0;
-            // Console.Write("Please choose LED to turn On/Off: ");
-            // string input = Console.ReadLine();
+            Console.Write("Please choose LED to turn On/Off: ");
+            string input = Console.ReadLine();
 
             foreach (var number in lamps)
             {
@@ -64,6 +60,6 @@ class Homework05 : IHomework05
             }
             Console.WriteLine("");
         }
-        
+        }
     }
 }

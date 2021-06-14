@@ -1,5 +1,6 @@
 using System;
 using System.Collections.Generic;
+using System.Linq;
 
 public interface IHomework13
 {
@@ -10,28 +11,24 @@ class HomeWork13 : IHomework13
 {
     public int Homework13(IEnumerable<int> numbers)
     {
+        //result
         List<int> data = new List<int>();
+
         foreach (var item in numbers)
         {
-            string cv = Convert.ToString(item);
-            for (int i = 0; i < cv.Length; i++)
+            string cv = item.ToString();
+            var x = cv.Contains("99");
+            if (x)
             {
-                if (cv[i] == 9)
-                {
-                    if (data[i - 1] == cv[i])
-                    {
-                        data.Add(cv[i]);
-                    }
-                    else
-                    {
-                        data.Add(cv[i]);
-                    }
-                    // Console.WriteLine("data : " + data);
-                }
+                data.Add(item);
+                System.Console.WriteLine($"{item} has 99");
+            }
+            else
+            {
+                System.Console.WriteLine($"{item} not found");
             }
         }
-        int[] dataNumber = data.ToArray();
-        return dataNumber;
-        // throw new NotImplementedException();
+        var countData = data.Distinct().ToList().Count;
+        return countData;
     }
 }
