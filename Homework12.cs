@@ -11,7 +11,7 @@ class HomeWork12 : IHomework12
     // Duplicate
     public char FirstDuplicateCharactor(string text)
     {
-        string str = text;
+
         string output = null;
         char output1 = '-';
         int[] fiArray = new int[256];
@@ -40,7 +40,7 @@ class HomeWork12 : IHomework12
 
         if (res != Int32.MaxValue)
         {
-            output = string.Join(" ", str[res]);
+            output = string.Join(" ", text[res]);
             output1 = Convert.ToChar(output);
         }
         return output1;
@@ -50,7 +50,7 @@ class HomeWork12 : IHomework12
     // Not Duplicate
     public char FirstNotDuplicateCharactor(string text)
     {
-        string str = text;
+
         string output = null;
         char output1 = '-';
         int[] fiArray = new int[256];
@@ -79,7 +79,7 @@ class HomeWork12 : IHomework12
 
         if (res != Int32.MaxValue)
         {
-            output = string.Join(" ", str[res]);
+            output = string.Join(" ", text[res]);
             output1 = Convert.ToChar(output);
         }
         return output1;

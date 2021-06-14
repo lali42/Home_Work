@@ -37,17 +37,12 @@ namespace Home_work
 
             // Homework13
             var number = new HomeWork13();
-            enum data : int
-            {
-                "000000", "000099", "009900", "990000",
-                "000999", "009990", "099900", "999000",
-                "990999", "919909", "999799", "999999",
-            }
-            // // IEnumerable<int> numbers = Enumerable.Range(000000,999999);
-            // Console.Write("input : ");
-            // IEnumerable<int> number = Console.ReadLine();
-            // int data = number.Homework13(numbers);
-            // Console.WriteLine(data);
+            // IEnumerable<int> data = Enumerable.Range(000000,999999).Select(x => x * x);
+            IEnumerable<int> data = new List<int>() {   000000, 000099, 009900, 990000,
+                                                        000999, 009990, 099900, 999000,
+                                                        990999, 919909, 999799, 999999, };
+            var numbers = number.Homework13(data);
+            Console.WriteLine(numbers);
 
         }
     }

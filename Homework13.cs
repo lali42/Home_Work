@@ -10,12 +10,28 @@ class HomeWork13 : IHomework13
 {
     public int Homework13(IEnumerable<int> numbers)
     {
-        IEnumerable<int> number = numbers;
-        foreach (int n in numbers)
+        List<int> data = new List<int>();
+        foreach (var item in numbers)
         {
-            return n;
+            string cv = Convert.ToString(item);
+            for (int i = 0; i < cv.Length; i++)
+            {
+                if (cv[i] == 9)
+                {
+                    if (data[i - 1] == cv[i])
+                    {
+                        data.Add(cv[i]);
+                    }
+                    else
+                    {
+                        data.Add(cv[i]);
+                    }
+                    // Console.WriteLine("data : " + data);
+                }
+            }
         }
-            // return number;
-        throw new NotImplementedException();
+        int[] dataNumber = data.ToArray();
+        return dataNumber;
+        // throw new NotImplementedException();
     }
 }
